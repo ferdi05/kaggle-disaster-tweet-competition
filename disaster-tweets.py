@@ -26,7 +26,7 @@ def run(tweet_content):
 
     # calling the API
     response = requests.post(API_URL, headers=headers, json=payload)
-    answer = json.loads(response.content)
+    answer = response.json()
 
     # Determining which label to return according to the prediction with the highest score
     # example of an API call response: [[{'label': '0', 'score': 0.9159180521965027}, {'label': '1', 'score': 0.08408192545175552}]]
