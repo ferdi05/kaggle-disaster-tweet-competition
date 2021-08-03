@@ -1,7 +1,7 @@
 API_TOKEN = "api_BeypKrKRhrvwITpiaUzFVYuuadOcoqYeIO"
 
 
-import requests, csv, json
+import requests, csv
 
 API_URL = "https://api-inference.huggingface.co/models/ferdinand/autonlp-kaggle-competition-clean-6421399" # URL of our model
 MODEL_MAX_LENGTH = 512 # parameter of our model, can be seen in config.json at "max_position_embeddings"
